@@ -4,9 +4,23 @@ I’ve investigated the issue you reported with accessing the website site.recru
 
 I pinged the server using the IP address you've given, what it does is to see whether the server is up and responding to network requests and the server replied to my ping which means it is still up.
 
-I used nslookup to query DNS servers to obtain information about domain names and IP addresses, and I found where is the problem, the IP address of the website is 192.168.1.10 which is a private address and 
+### ping 120.138.30.179
+Reply from 120.138.30.179: bytes=32 time=14ms TTL=56
+Reply from 120.138.30.179: bytes=32 time=17ms TTL=56
+Reply from 120.138.30.179: bytes=32 time=14ms TTL=56
+Reply from 120.138.30.179: bytes=32 time=16ms TTL=56
 
-which is why it's inaccessible from the public internet. The website is likely behind a misconfigured DNS server.
+
+I used nslookup to query DNS servers to obtain information about domain names and IP addresses, and I found where is the problem, the IP address of the website is 192.168.1.10 which is a private address and which is why it's inaccessible from the public internet. The website is likely behind a misconfigured DNS server.
+
+### nslookup site.recruitment.shq.nz
+Server:  ns1.anycast.devoli.nz
+Address:  14.1.33.1
+
+Non-authoritative answer:
+Name:    site.recruitment.shq.nz
+Address:  192.168.1.10
+
 
 To resolve this, I recommend the following steps:
 
