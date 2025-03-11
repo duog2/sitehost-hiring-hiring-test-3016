@@ -6,8 +6,11 @@ I pinged the server using the IP address you've given, what it does is to see wh
 
 ### ping 120.138.30.179
 Reply from 120.138.30.179: bytes=32 time=14ms TTL=56
+
 Reply from 120.138.30.179: bytes=32 time=17ms TTL=56
+
 Reply from 120.138.30.179: bytes=32 time=14ms TTL=56
+
 Reply from 120.138.30.179: bytes=32 time=16ms TTL=56
 
 
@@ -15,12 +18,14 @@ I used nslookup to query DNS servers to obtain information about domain names an
 
 ### nslookup site.recruitment.shq.nz
 Server:  ns1.anycast.devoli.nz
+
 Address:  14.1.33.1
 
 Non-authoritative answer:
-Name:    site.recruitment.shq.nz
-Address:  192.168.1.10
 
+Name:    site.recruitment.shq.nz
+
+Address:  192.168.1.10
 
 To resolve this, I recommend the following steps:
 
@@ -38,4 +43,5 @@ Please have your DNS settings corrected to ensure that the public-facing IP addr
 Please let me know if you need further assistance with this process!
 
 Best regards,
+
 Duong Tran
